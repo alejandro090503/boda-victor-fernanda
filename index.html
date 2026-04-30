@@ -170,7 +170,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .loc-info-row{display:flex;align-items:flex-start;justify-content:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(176,48,96,.08)}
 .loc-info-row:last-child{border-bottom:none}
 .loc-info-icon{width:17px;height:17px;flex-shrink:0;margin-top:2px;stroke:var(--accent);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.loc-info-text{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);line-height:1.6}
+.loc-info-text{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);line-height:1.6;text-align:left}
 .loc-info-text strong{font-weight:600;color:var(--dark);display:block}
 .map-container{border-radius:16px;overflow:hidden;margin-top:18px;border:1px solid rgba(176,48,96,.12);height:220px}
 .map-container iframe{width:100%;height:100%;border:none;display:block}
@@ -667,19 +667,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ÁLBUM -->
-  <section id="album">
-    <p class="eyebrow rv">Comparte el Momento</p>
-    <h2 class="script-title rv">Álbum Compartido</h2>
-    <p class="album-note rv">¡Queremos ver la boda a través de tus ojos! Escanea el código y sube tus fotos al álbum compartido.</p>
-    <div class="album-qr-wrap rv">
-      <div class="qr-corner-extra tr"></div>
-      <div class="qr-corner-extra bl"></div>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=380x380&color=90C8E8&bgcolor=0D2455&qzone=2&format=png&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1-URIICWXKLXudTlNamjNwKlC5FjCfcSy%3Fusp%3Dsharing" alt="QR Álbum de fotos">
-      <div class="qr-deco-line"><span>❧ Álbum compartido ❧</span></div>
-      <span class="qr-label">Escanea para subir tus fotos</span>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer id="footer">
@@ -723,6 +710,7 @@ function initEnvelope(){
   gsap.fromTo(envTap,{opacity:0,y:8},{opacity:1,y:0,duration:.9,delay:1.2,ease:'power2.out'});
   function onTap(e){
     if(tapped)return;tapped=true;e.preventDefault();
+    if(typeof window._startAudio==='function')window._startAudio();
     gsap.to(envTap,{opacity:0,duration:.3});
     envVideo.currentTime=0;envVideo.play().catch(()=>{});
     envVideo.addEventListener('timeupdate',checkFlash);
