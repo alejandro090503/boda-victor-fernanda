@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
-<title>María Fernanda &amp; V · 10 Octubre 2026</title>
+<title>María Fernanda &amp; Federico · 10 Octubre 2026</title>
 <meta name="description" content="Nos casamos y queremos que estés ahí. Una celebración especial en San Martín Texmelucan — 10 de Octubre 2026">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://boda-maria-fede.vercel.app/">
-<meta property="og:title" content="María Fernanda &amp; V · 10 · X · MMXXVI">
+<meta property="og:title" content="María Fernanda &amp; Federico · 10 · X · MMXXVI">
 <meta property="og:description" content="Nos casamos y queremos que estés ahí. San Martín Texmelucan, Puebla — 10 Octubre 2026">
 <meta property="og:image" content="https://boda-maria-fede.vercel.app/og-image.jpg">
 <meta property="og:image:secure_url" content="https://boda-maria-fede.vercel.app/og-image.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Invitación de boda María Fernanda y V">
+<meta property="og:image:alt" content="Invitación de boda María Fernanda y Federico">
 <meta property="og:locale" content="es_MX">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://boda-maria-fede.vercel.app/">
-<meta name="twitter:title" content="María Fernanda &amp; V · 10 · X · MMXXVI">
+<meta name="twitter:title" content="María Fernanda &amp; Federico · 10 · X · MMXXVI">
 <meta name="twitter:description" content="Nos casamos y queremos que estés ahí. San Martín Texmelucan, Puebla — 10 Octubre 2026">
 <meta name="twitter:image" content="https://boda-maria-fede.vercel.app/og-image.jpg">
 <script>if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
@@ -27,17 +27,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F9F2F4;
-  --surface:#F0E0E5;
-  --card:#FFFBFC;
-  --accent:#9B4F68;
-  --accent2:#C4858A;
-  --dark:#2A1120;
-  --text:#24101C;
-  --copper:#C8895A;
-  --copper-light:#E0B88A;
-  --blush:#F5D4DA;
-  --plum:#5C2A3C;
+  --bg:#FEF6FA;
+  --surface:#FBECF4;
+  --card:#FFFFFF;
+  --accent:#C2185B;
+  --accent2:#D81B60;
+  --dark:#1B0010;
+  --text:#2D1428;
+  --copper:#B8860B;
+  --copper-light:#D4A820;
+  --blush:#FCE4EC;
+  --plum:#880E4F;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{overflow-x:hidden;max-width:100vw}
@@ -99,23 +99,29 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 
 /* COUNTDOWN */
 #countdown{padding:80px 28px;background:var(--bg);text-align:center}
-.cd-ring-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:370px;margin:32px auto 0}
-.cd-ring{display:flex;flex-direction:column;align-items:center;gap:8px}
-.cd-ring-track{position:relative;width:72px;height:72px}
-.cd-ring-bg{position:absolute;inset:0;border:2px solid rgba(155,79,104,.1);border-radius:50%}
-.cd-ring-fill{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 60% 40%,rgba(200,137,90,.08),transparent 70%)}
-.cd-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Bodoni Moda',serif;font-size:22px;color:var(--dark);font-weight:600;line-height:1;transition:transform .15s ease,opacity .15s ease}
-.cd-num.flip{transform:translateY(-6px);opacity:0}
-.cd-corner{position:absolute;width:8px;height:8px}
-.cd-corner svg{width:8px;height:8px}
-.cd-c-tl{top:2px;left:2px}
-.cd-c-tr{top:2px;right:2px;transform:scaleX(-1)}
-.cd-c-bl{bottom:2px;left:2px;transform:scaleY(-1)}
-.cd-c-br{bottom:2px;right:2px;transform:scale(-1)}
-.cd-lbl{font-family:'Jost',sans-serif;font-weight:200;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent)}
+.cd-bar-grid{display:flex;align-items:center;justify-content:center;gap:0;max-width:420px;margin:36px auto 0;padding:36px 20px;background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(194,24,91,.04));border-radius:24px;border:1px solid rgba(184,134,11,.15)}
+.cd-unit{display:flex;flex-direction:column;align-items:center;padding:0 18px}
+.cd-big{font-family:'Bodoni Moda',serif;font-size:clamp(36px,10vw,56px);color:var(--dark);font-weight:600;line-height:1;transition:transform .15s ease,opacity .15s ease;display:block;letter-spacing:-1px}
+.cd-big.flip{transform:translateY(-10px);opacity:0}
+.cd-sep{width:1px;height:52px;background:linear-gradient(to bottom,transparent,rgba(184,134,11,.35),transparent)}
+.cd-lbl{font-family:'Jost',sans-serif;font-weight:200;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-top:8px}
+
+/* FECHA BLUR EDGES */
+#fecha{
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 14%,#000 86%,transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0%,#000 14%,#000 86%,transparent 100%);
+}
+
+/* SMOOTH TAB TRANSITION */
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.loc-panel{display:none}
+.loc-panel.active{display:block;animation:fadeSlideIn .4s ease both}
 
 /* QUOTE */
-#quote{padding:88px 28px;background:var(--dark);text-align:center;position:relative;overflow:hidden}
+#quote{padding:88px 28px;background:var(--dark);text-align:center;position:relative;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 90%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 90%,transparent 100%);
+}
 .quote-deco-fan{position:absolute;pointer-events:none;opacity:.07}
 .quote-deco-fan--l{left:-30px;bottom:-20px}
 .quote-deco-fan--r{right:-30px;top:-20px;transform:rotate(180deg)}
@@ -143,12 +149,10 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .loc-tabs{display:flex;gap:0;border-radius:50px;background:rgba(42,17,32,.06);padding:4px;margin:22px auto 28px;max-width:300px}
 .loc-tab{flex:1;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text);border:none;background:transparent;padding:11px 14px;border-radius:50px;cursor:pointer;transition:all .3s;opacity:.55}
 .loc-tab.active{background:var(--dark);color:var(--copper-light);opacity:1;box-shadow:0 3px 14px rgba(42,17,32,.2)}
-.loc-panel{display:none}
-.loc-panel.active{display:block}
-.loc-card{background:var(--card);border-radius:22px;padding:30px 22px 26px;box-shadow:0 6px 32px rgba(42,17,32,.07);border:1px solid rgba(155,79,104,.1);text-align:left}
+.loc-card{background:var(--card);border-radius:22px;padding:30px 22px 26px;box-shadow:0 6px 32px rgba(42,17,32,.07);border:1px solid rgba(155,79,104,.1);text-align:center}
 .loc-venue-name{font-family:'Great Vibes',cursive;font-size:44px;color:var(--dark);text-align:center;line-height:1.1;margin-bottom:6px}
 .loc-badge{display:flex;align-items:center;gap:6px;background:rgba(155,79,104,.07);border:1px solid rgba(155,79,104,.2);border-radius:50px;padding:5px 14px;font-family:'Jost',sans-serif;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin:0 auto 20px;width:fit-content}
-.loc-info-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid rgba(155,79,104,.08)}
+.loc-info-row{display:flex;align-items:flex-start;justify-content:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(155,79,104,.08)}
 .loc-info-row:last-child{border-bottom:none}
 .loc-info-icon{width:17px;height:17px;flex-shrink:0;margin-top:2px;stroke:var(--accent);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .loc-info-text{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);line-height:1.6}
@@ -208,7 +212,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .drop-photo-3{margin-left:48px;top:4px}
 .drop-photo-4{margin-left:-160px;top:118px}
 .drop-photo-5{margin-left:-56px;top:6px}
-.drop-photo-6{margin-left:48px;top:120px}
 .drop-photo.focused{z-index:10!important}
 .drop-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);opacity:.5;margin-top:14px;display:block;padding:0 28px}
 
@@ -287,7 +290,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 <body>
 
 <div id="loader">
-  <div class="ld-mono" id="ldMono"><span>V</span><span>&nbsp;</span><span>&amp;</span><span>&nbsp;</span><span>F</span></div>
+  <div class="ld-mono" id="ldMono"><span>M</span><span>&nbsp;</span><span>&amp;</span><span>&nbsp;</span><span>F</span></div>
   <p class="ld-tag" id="ldTag">Nos casamos · 10 Octubre 2026</p>
 </div>
 
@@ -317,7 +320,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       <span class="hero-tag rv">10 · Octubre · 2026</span>
       <span class="hero-bride rv">María Fernanda</span>
       <span class="hero-amp rv">&amp;</span>
-      <span class="hero-groom rv">[NOVIO]</span>
+      <span class="hero-groom rv">Federico</span>
       <span class="hero-date rv">San Martín Texmelucan, Pue.</span>
     </div>
     <div class="scroll-hint" id="scrollHint">
@@ -342,50 +345,25 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <p class="eyebrow">Faltan</p>
     <h2 class="script-title">Cuenta Regresiva</h2>
     <p class="section-sub">El momento más esperado</p>
-    <div class="cd-ring-grid">
-      <div class="cd-ring rv">
-        <div class="cd-ring-track">
-          <div class="cd-ring-bg"></div><div class="cd-ring-fill"></div>
-          <div class="cd-corner cd-c-tl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-tr"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-bl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-br"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-num" id="cdDias">000</div>
-        </div>
-        <div class="cd-lbl">Días</div>
+    <div class="cd-bar-grid rv">
+      <div class="cd-unit">
+        <span class="cd-big" id="cdDias">000</span>
+        <span class="cd-lbl">Días</span>
       </div>
-      <div class="cd-ring rv">
-        <div class="cd-ring-track">
-          <div class="cd-ring-bg"></div><div class="cd-ring-fill"></div>
-          <div class="cd-corner cd-c-tl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-tr"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-bl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-br"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-num" id="cdHoras">00</div>
-        </div>
-        <div class="cd-lbl">Horas</div>
+      <div class="cd-sep"></div>
+      <div class="cd-unit">
+        <span class="cd-big" id="cdHoras">00</span>
+        <span class="cd-lbl">Horas</span>
       </div>
-      <div class="cd-ring rv">
-        <div class="cd-ring-track">
-          <div class="cd-ring-bg"></div><div class="cd-ring-fill"></div>
-          <div class="cd-corner cd-c-tl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-tr"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-bl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-br"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-num" id="cdMins">00</div>
-        </div>
-        <div class="cd-lbl">Min</div>
+      <div class="cd-sep"></div>
+      <div class="cd-unit">
+        <span class="cd-big" id="cdMins">00</span>
+        <span class="cd-lbl">Min</span>
       </div>
-      <div class="cd-ring rv">
-        <div class="cd-ring-track">
-          <div class="cd-ring-bg"></div><div class="cd-ring-fill"></div>
-          <div class="cd-corner cd-c-tl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-tr"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-bl"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-corner cd-c-br"><svg viewBox="0 0 8 8"><path d="M1 7L1 1L7 1" stroke="#C8895A" stroke-width="1.2" fill="none" opacity=".5"/></svg></div>
-          <div class="cd-num" id="cdSecs">00</div>
-        </div>
-        <div class="cd-lbl">Seg</div>
+      <div class="cd-sep"></div>
+      <div class="cd-unit">
+        <span class="cd-big" id="cdSecs">00</span>
+        <span class="cd-lbl">Seg</span>
       </div>
     </div>
   </section>
@@ -405,10 +383,10 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </svg>
     <span class="quote-mark rv">"</span>
     <p class="quote-txt rv">
-      Llegaste sin aviso y te quedaste para siempre;<br>
-      en ti encontré el hogar que nunca supe que buscaba.
+      Amarte es el acto más sencillo y más vasto que he conocido;<br>
+      en ti cabe todo lo que soy y todo lo que seré.
     </p>
-    <span class="quote-sig rv">María Fernanda &amp; [NOVIO]</span>
+    <span class="quote-sig rv">María Fernanda &amp; Federico</span>
     <div class="quote-bar rv"></div>
   </section>
 
@@ -626,28 +604,24 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <p class="section-sub rv">Momentos que nos trajeron hasta aquí</p>
     <div class="drop-stage" id="dropStage">
       <div class="drop-photo drop-photo-1" id="dropP1">
-        <img src="foto1.jpg" alt="María Fernanda &amp; V">
+        <img src="foto1.jpg" alt="María Fernanda &amp; Federico">
         <span class="drop-photo-label">Nuestro primer viaje</span>
       </div>
       <div class="drop-photo drop-photo-2" id="dropP2">
-        <img src="foto2.jpg" alt="María Fernanda &amp; V">
+        <img src="foto2.jpg" alt="María Fernanda &amp; Federico">
         <span class="drop-photo-label">El día que dijimos sí</span>
       </div>
       <div class="drop-photo drop-photo-3" id="dropP3">
-        <img src="foto3.jpg" alt="María Fernanda &amp; V">
+        <img src="foto3.jpg" alt="María Fernanda &amp; Federico">
         <span class="drop-photo-label">Para siempre</span>
       </div>
       <div class="drop-photo drop-photo-4" id="dropP4">
-        <img src="foto4.jpg" alt="María Fernanda &amp; V">
+        <img src="foto4.jpg" alt="María Fernanda &amp; Federico">
         <span class="drop-photo-label">Juntos siempre</span>
       </div>
       <div class="drop-photo drop-photo-5" id="dropP5">
-        <img src="foto5.jpg" alt="María Fernanda &amp; V">
+        <img src="foto5.jpg" alt="María Fernanda &amp; Federico">
         <span class="drop-photo-label">Nuestra historia</span>
-      </div>
-      <div class="drop-photo drop-photo-6" id="dropP6">
-        <img src="foto6.jpg" alt="María Fernanda &amp; V">
-        <span class="drop-photo-label">El gran día</span>
       </div>
     </div>
     <span class="drop-hint rv" id="dropHint">Toca cada foto para enfocarla</span>
@@ -712,7 +686,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       <div class="rsvp-divider"></div>
       <div class="rsvp-field">
         <label for="rsvpMsg">Mensaje para los novios</label>
-        <textarea id="rsvpMsg" placeholder="Escribe algo especial para María Fernanda &amp; [NOVIO]…"></textarea>
+        <textarea id="rsvpMsg" placeholder="Escribe algo especial para María Fernanda &amp; Federico…"></textarea>
       </div>
       <button class="btn-wa" onclick="sendRsvp()">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.165-.008-.35-.01-.534-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.559 4.122 1.535 5.858L0 24l6.335-1.513A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.003-1.374l-.359-.213-3.724.889.923-3.614-.234-.373A9.773 9.773 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -731,7 +705,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
         <circle cx="90" cy="48" r="3" fill="#C8895A"/>
       </svg>
     </div>
-    <div class="footer-names rv">María Fernanda &amp; [NOVIO]</div>
+    <div class="footer-names rv">María Fernanda &amp; Federico</div>
     <div class="footer-date rv">10 · Octubre · MMXXVI</div>
     <div class="footer-hr"></div>
     <a href="https://www.instagram.com/elysium.invitaciones" target="_blank" rel="noopener" class="footer-credit rv">@elysium.invitaciones</a>
@@ -837,7 +811,7 @@ function sendRsvp(){
         attend=document.getElementById('rsvpAttend').value||'Sin respuesta',
         diet=document.getElementById('rsvpDiet').value,
         message=document.getElementById('rsvpMsg').value.trim()||'—';
-  const text=['¡Hola! Confirmación de asistencia a la boda de María Fernanda 🌸','',`*Nombre:* ${name}`,`*Asistencia:* ${attend}`,`*Dieta:* ${diet}`,`*Mensaje:* ${message}`].join('\n');
+  const text=['¡Hola! Confirmación de asistencia a la boda de María Fernanda y Federico 💕','',`*Nombre:* ${name}`,`*Asistencia:* ${attend}`,`*Dieta:* ${diet}`,`*Mensaje:* ${message}`].join('\n');
   window.open('https://wa.me/52XXXXXXXXXX?text='+encodeURIComponent(text),'_blank');
 }
 
@@ -854,8 +828,10 @@ function initAll(){
   gsap.fromTo('.hero-date',{y:18,opacity:0},{y:0,opacity:1,duration:.8,delay:1.5,ease:'power2.out'});
   gsap.fromTo('.hero-deco-corner',{opacity:0,scale:.7},{opacity:1,scale:1,duration:1.2,delay:1.8,stagger:.12,ease:'power2.out'});
 
-  document.querySelectorAll('.cd-ring').forEach((el,i)=>{
-    gsap.fromTo(el,{y:28,opacity:0,scale:.85},{y:0,opacity:1,scale:1,duration:.65,ease:'back.out(1.7)',delay:i*.14,
+  gsap.fromTo('.cd-bar-grid',{y:28,opacity:0},{y:0,opacity:1,duration:.8,ease:'power3.out',
+    scrollTrigger:{trigger:'#countdown',start:'top 85%',toggleActions:'play none none none'}});
+  document.querySelectorAll('.cd-unit').forEach((el,i)=>{
+    gsap.fromTo(el,{y:20,opacity:0},{y:0,opacity:1,duration:.55,ease:'back.out(1.5)',delay:i*.12,
       scrollTrigger:{trigger:'#countdown',start:'top 85%',toggleActions:'play none none none'}});
   });
 
@@ -884,15 +860,14 @@ function initAll(){
 
   /* ── GALERÍA: FOTOS QUE CAEN ── */
   (function(){
-    const finalRotations=[-6,3,-5,4,-2,5];
-    const finalOffsets=[0,0,0,0,0,0];
+    const finalRotations=[-6,3,-5,4,-2];
+    const finalOffsets=[0,0,0,0,0];
     const photos=[
       {el:document.getElementById('dropP1'),rot:finalRotations[0],ox:finalOffsets[0]},
       {el:document.getElementById('dropP2'),rot:finalRotations[1],ox:finalOffsets[1]},
       {el:document.getElementById('dropP3'),rot:finalRotations[2],ox:finalOffsets[2]},
       {el:document.getElementById('dropP4'),rot:finalRotations[3],ox:finalOffsets[3]},
       {el:document.getElementById('dropP5'),rot:finalRotations[4],ox:finalOffsets[4]},
-      {el:document.getElementById('dropP6'),rot:finalRotations[5],ox:finalOffsets[5]},
     ];
 
     ScrollTrigger.create({
